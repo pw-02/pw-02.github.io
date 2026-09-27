@@ -1,29 +1,132 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. Candidate
+    - title: Ph.D. in Computer Science and Engineering
       institution: University of Nevada, Reno
-      year: Present
+      year: Expected Dec 2026
       description:
-        - Research in AI systems, high-performance computing, and distributed machine learning.
+        - "Advisors: Feng Yan and Lei Yang"
+        - "GPA: 4.00"
+    - title: B.Sc. (Hons) in Computing Science, First Class Honours
+      institution: Ulster University, Belfast, Northern Ireland
+      year: May 2017
+      description:
+        - "GPA: 4.00"
 
-- title: Research Focus
+- title: Selected Research
   type: nested_list
   contents:
-    - title: AI and ML Systems
+    - title: "OPSERVE — Opportunistic LLM Inference over Fragmented GPU Capacity in HPC Systems"
       items:
-        - Resource-efficient machine learning
-        - Large language model inference and serving
-        - GPU computing and performance optimization
-    - title: Distributed Systems and HPC
+        - Designed a malleable LLM serving architecture that combines persistent inference capacity with transient GPU resources exposed by HPC batch schedulers.
+        - Developed adaptive prefill/decode worker allocation and shared KV-cache mechanisms for preserving completed prefill state as transient workers are added or reclaimed.
+        - Characterized a year of Polaris traces and identified 9.81% of operational node-hours as unallocated capacity; OPSERVE reduced p95 end-to-end latency by 1.5–2.1× under sustainable loads and by up to 14.3× in evaluated overload scenarios.
+        - "Accepted to AIonHPC @ SC26, 2026."
+    - title: "BatchFlow — Benefit-Aware Data Pipeline Allocation and Batch Reuse for Multi-Job Training"
       items:
-        - Distributed machine learning
-        - High-performance computing
-        - Scalable systems for verifiable machine learning
+        - Designed a distributed data-pipeline service that treats data preparation workers and cache capacity as shared cluster resources across concurrent deep-learning jobs.
+        - Developed online profiling and benefit-aware scheduling for dynamically allocating workers, prefetching mini-batches, and exploiting cross-job data reuse.
+        - Built a PyTorch-compatible prototype evaluated on AWS; improved aggregate training throughput by up to 3.8× and cost efficiency by up to 2.1× over evaluated baselines.
+        - "Accepted to SC26, 2026."
+    - title: "zkInfer — Distributed Proof Generation for Verifiable Machine Learning"
+      items:
+        - Designed a distributed proof-serving architecture that decomposes ML inference into independently executable zero-knowledge proving jobs.
+        - Developed resource-aware scheduling, memory-aware admission, reusable proving artifacts, and cryptographic commitments for composing independently generated proofs.
+        - Reduced end-to-end proving latency by up to 5.6× through decomposition on a single worker and by up to 69× with distributed execution, while reducing peak per-machine memory by up to 48× in evaluated workloads.
 
-- title: Current Research
+- title: Publications
   type: list
   contents:
-    - Adaptive LLM inference using opportunistic GPU resources in HPC environments
-    - Efficient data pipelines for multi-job deep learning training
-    - Scalable distributed systems for verifiable machine learning
+    - "Patrick Watters, Xiaolong Ma, Syed Zawad, Jingyuan Zhang, Yue Cheng, Lei Yang, Feng Yan. “BatchFlow: Benefit-Aware Data Pipeline Allocation and Batch Reuse for Multi-Job Training.” SC26, 2026. Accepted, to appear."
+    - "Patrick Watters, Xiaolong Ma, Harry Yu, Ian Foster, Michael Papka, Lei Yang, Feng Yan, Rajkumar Kettimuthu. “OPSERVE: Opportunistic LLM Inference over Fragmented GPU Capacity in HPC Systems.” AIonHPC @ SC26, 2026. Accepted, to appear."
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Graduate Research Assistant
+      institution: Intelligent Data and Systems Lab, University of Nevada, Reno
+      year: 07/2021 – Present
+      description:
+        - Conduct research in AI systems, distributed computing, and high-performance computing, with emphasis on resource-efficient training and inference infrastructure.
+        - Design and evaluate distributed systems across HPC and cloud environments, including GPU inference systems, ML data pipelines, and scalable proof-generation infrastructure.
+        - Developed data pipelines to transform multimodal wildland fire sensor data into labeled datasets and trained deep learning models for applied fire science research.
+    - title: Ph.D. Research Intern
+      institution: Nokia Bell Labs, Stuttgart, Germany
+      year: 08/2022 – 11/2022
+      description:
+        - Designed and implemented a distributed zero-knowledge proof-generation system using Apache Spark.
+        - Parallelized Number Theoretic Transform and Multi-Scalar Multiplication workloads across cluster resources to investigate proof-generation scalability and latency.
+        - Characterized compute, memory, and parallelization bottlenecks in large-scale cryptographic workloads and presented findings to Bell Labs research teams.
+
+- title: Research Programs and Presentations
+  type: nested_list
+  contents:
+    - title: "NSF EPSCoR — Harnessing the Data Revolution for Fire Science (HDRFS)"
+      items:
+        - Contributed machine-learning and data-pipeline work for multimodal wildland-fire sensor data.
+        - Presented research at annual project meetings over the past three years.
+
+- title: Industry Experience
+  type: time_table
+  contents:
+    - title: Senior Professional Services Consultant
+      institution: Automated Intelligence, Belfast, Northern Ireland
+      year: 07/2016 – 08/2021
+      description:
+        - Led enterprise and public-sector cloud migration projects involving Microsoft Azure and Microsoft 365, modernizing legacy data systems and workflows.
+        - Designed and implemented C#/.NET and Azure-based systems for large-scale data migration, transformation, and automation.
+        - Delivered production systems from requirements and architecture through implementation and deployment.
+
+- title: Teaching and Mentoring
+  type: time_table
+  contents:
+    - title: Undergraduate Research Mentor
+      institution: Research Experiences for Undergraduates, University of Nevada, Reno
+      year: 06/2023 – 09/2023
+      description:
+        - Mentored undergraduate researchers developing weakly supervised object-detection models for wildfire smoke detection.
+        - Guided implementation, GPU training, experimental analysis, and interpretation of research literature.
+    - title: Graduate Teaching Assistant
+      institution: Abstract Data Structures, University of Nevada, Reno
+      year: 07/2021 – 07/2022
+      description:
+        - Taught C/C++ programming, data structures, algorithms, memory management, and complexity analysis.
+        - Mentored students through office hours, debugging, and code review.
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Programming
+      items:
+        - Python
+        - C++
+        - Rust
+        - C#
+        - Java
+    - title: AI / ML Systems
+      items:
+        - PyTorch
+        - TensorFlow
+        - DeepSpeed
+        - vLLM
+        - ONNX
+    - title: Distributed / HPC
+      items:
+        - gRPC
+        - Apache Spark
+        - GPU systems
+        - HPC clusters
+    - title: Cloud / Infrastructure
+      items:
+        - AWS
+        - Microsoft Azure
+        - Docker
+        - Linux
+        - Git
+
+- title: Awards and Honours
+  type: list
+  contents:
+    - Automated Intelligence Values Award, 2020
+    - Ulster EDGE Award, 2017
+    - Dean's List, Faculty of Computing, Engineering and the Built Environment, Ulster University, 2017
