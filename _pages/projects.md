@@ -1,13 +1,11 @@
 ---
 layout: page
-title: Research
+title: research
 permalink: /research/
 description:
 nav: true
 nav_order: 2
 ---
-
-## Research
 
 Selected research projects and ongoing work.
 
