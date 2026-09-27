@@ -1,9 +1,9 @@
 {% if entry.title == 'Awards and Honours' %}
-  <div class="cv-awards">
+  <ul class="cv-awards-list">
     {% for content in entry.contents %}
-      <div class="cv-award-item">{{ content }}</div>
+      <li>{{ content }}</li>
     {% endfor %}
-  </div>
+  </ul>
 {% else %}
   <div class="cv-simple-list">
     {% for content in entry.contents %}
