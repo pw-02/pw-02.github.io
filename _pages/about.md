@@ -25,7 +25,7 @@ I am especially interested in emerging systems challenges in **agentic AI, effic
 
 <div class="home-callout">
   <strong>What I work on</strong>
-  <p>Efficient inference, scalable AI infrastructure, and resource-aware execution for modern AI workloads.</p>
+  <p>LLM inference & serving · ML systems infrastructure · high-performance computing · verifiable ML / ZKML</p>
 </div>
 
 ## Current research
