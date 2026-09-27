@@ -1,65 +1,34 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: Selected research and systems projects.
-nav: false
-nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+title: research
+permalink: /research/
+description: Selected research directions in AI systems, ML infrastructure, distributed systems, and HPC.
+nav: true
+nav_order: 2
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
+My work focuses on the systems challenges behind efficient, scalable machine learning. I am especially interested in the boundary between **AI infrastructure, distributed systems, and high-performance computing**.
+
+<div class="research-grid">
+  <div class="research-card">
+    <h3>Adaptive LLM inference</h3>
+    <p>Exploring how large language model inference can adapt to opportunistically available GPU resources in HPC environments, with an emphasis on utilization, flexibility, and serving efficiency.</p>
+    <div class="research-tags"><span>LLM serving</span><span>GPU systems</span><span>HPC</span></div>
   </div>
-  {% else %}
-  <div class="grid">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
+
+  <div class="research-card">
+    <h3>Deep learning data pipelines</h3>
+    <p>Designing efficient data pipelines for concurrent deep learning workloads, including the I/O and resource-contention challenges that emerge when multiple training jobs share infrastructure.</p>
+    <div class="research-tags"><span>ML systems</span><span>Data pipelines</span><span>Performance</span></div>
   </div>
-  {% endif %}
-  {% endfor %}
 
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
+  <div class="research-card">
+    <h3>Verifiable ML systems</h3>
+    <p>Investigating scalable distributed-system designs for verifiable machine learning, with a focus on efficient coordination and execution at scale.</p>
+    <div class="research-tags"><span>Distributed systems</span><span>Verification</span><span>Scalability</span></div>
   </div>
-  {% else %}
-  <div class="grid">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
 </div>
+
+## Broader interests
+
+AI infrastructure · ML systems · LLM serving · GPU computing · distributed computing · performance optimization · high-performance computing
