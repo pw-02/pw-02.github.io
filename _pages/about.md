@@ -25,7 +25,7 @@ I am especially interested in emerging systems challenges in **agentic AI, effic
 
 <div class="home-callout">
   <strong>What I work on</strong>
-  <p>LLM inference & serving · ML systems infrastructure · high-performance computing · verifiable ML / ZKML</p>
+  <p>LLM serving · ML systems · HPC · verifiable ML / ZKML</p>
 </div>
 
 ## Current research
@@ -42,7 +42,7 @@ I am especially interested in emerging systems challenges in **agentic AI, effic
   </div>
 
   <div class="home-focus-item">
-    <h3>Distributed AI systems</h3>
+    <h3>Distributed &amp; verifiable AI systems</h3>
     <p>Exploring scalable coordination and execution for distributed and verifiable machine learning workloads.</p>
   </div>
 </div>
