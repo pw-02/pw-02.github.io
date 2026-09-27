@@ -7,38 +7,16 @@
       description:
         - "Advisors: Feng Yan and Lei Yang"
         - "GPA: 4.00"
+    - title: M.S. in Computer Science and Engineering
+      institution: University of Nevada, Reno
+      year: Expected Dec 2026
+      description:
+        - "En route to Ph.D."
     - title: B.Sc. (Hons) in Computing Science, First Class Honours
       institution: Ulster University, Belfast, Northern Ireland
       year: May 2017
       description:
         - "GPA: 4.00"
-
-- title: Selected Research
-  type: nested_list
-  contents:
-    - title: "OPSERVE — Opportunistic LLM Inference over Fragmented GPU Capacity in HPC Systems"
-      items:
-        - Designed a malleable LLM serving architecture that combines persistent inference capacity with transient GPU resources exposed by HPC batch schedulers.
-        - Developed adaptive prefill/decode worker allocation and shared KV-cache mechanisms for preserving completed prefill state as transient workers are added or reclaimed.
-        - Characterized a year of Polaris traces and identified 9.81% of operational node-hours as unallocated capacity; OPSERVE reduced p95 end-to-end latency by 1.5–2.1× under sustainable loads and by up to 14.3× in evaluated overload scenarios.
-        - "Accepted to AIonHPC @ SC26, 2026."
-    - title: "BatchFlow — Benefit-Aware Data Pipeline Allocation and Batch Reuse for Multi-Job Training"
-      items:
-        - Designed a distributed data-pipeline service that treats data preparation workers and cache capacity as shared cluster resources across concurrent deep-learning jobs.
-        - Developed online profiling and benefit-aware scheduling for dynamically allocating workers, prefetching mini-batches, and exploiting cross-job data reuse.
-        - Built a PyTorch-compatible prototype evaluated on AWS; improved aggregate training throughput by up to 3.8× and cost efficiency by up to 2.1× over evaluated baselines.
-        - "Accepted to SC26, 2026."
-    - title: "zkInfer — Distributed Proof Generation for Verifiable Machine Learning"
-      items:
-        - Designed a distributed proof-serving architecture that decomposes ML inference into independently executable zero-knowledge proving jobs.
-        - Developed resource-aware scheduling, memory-aware admission, reusable proving artifacts, and cryptographic commitments for composing independently generated proofs.
-        - Reduced end-to-end proving latency by up to 5.6× through decomposition on a single worker and by up to 69× with distributed execution, while reducing peak per-machine memory by up to 48× in evaluated workloads.
-
-- title: Publications
-  type: list
-  contents:
-    - "Patrick Watters, Xiaolong Ma, Syed Zawad, Jingyuan Zhang, Yue Cheng, Lei Yang, Feng Yan. “BatchFlow: Benefit-Aware Data Pipeline Allocation and Batch Reuse for Multi-Job Training.” SC26, 2026. Accepted, to appear."
-    - "Patrick Watters, Xiaolong Ma, Harry Yu, Ian Foster, Michael Papka, Lei Yang, Feng Yan, Rajkumar Kettimuthu. “OPSERVE: Opportunistic LLM Inference over Fragmented GPU Capacity in HPC Systems.” AIonHPC @ SC26, 2026. Accepted, to appear."
 
 - title: Research Experience
   type: time_table
@@ -47,9 +25,10 @@
       institution: Intelligent Data and Systems Lab, University of Nevada, Reno
       year: 07/2021 – Present
       description:
-        - Conduct research in AI systems, distributed computing, and high-performance computing, with emphasis on resource-efficient training and inference infrastructure.
-        - Design and evaluate distributed systems across HPC and cloud environments, including GPU inference systems, ML data pipelines, and scalable proof-generation infrastructure.
-        - Developed data pipelines to transform multimodal wildland fire sensor data into labeled datasets and trained deep learning models for applied fire science research.
+        - "<strong>OPSERVE:</strong> Built a malleable LLM serving system that combines persistent and transient GPU workers in batch-scheduled HPC environments, dynamically adapting prefill/decode capacity and preserving completed prefill state through shared KV storage. In evaluated workloads, OPSERVE reduced p95 end-to-end latency by 1.5–2.1× under sustainable load and by up to 14.3× under overload. Accepted to AIonHPC @ SC26, 2026."
+        - "<strong>BatchFlow:</strong> Built a distributed data-pipeline service for multi-job training that dynamically allocates shared data workers and cache capacity using online profiling and benefit-aware scheduling. A PyTorch-compatible prototype evaluated on AWS improved aggregate training throughput by up to 3.8× and cost efficiency by up to 2.1×. Accepted to SC26, 2026."
+        - "<strong>zkInfer:</strong> Designed a distributed proof-serving architecture for verifiable ML that decomposes inference into independently executable zero-knowledge proving jobs with resource-aware scheduling, memory-aware admission, and reusable proving artifacts. In evaluated workloads, decomposition reduced latency by up to 5.6× on one worker and distributed execution by up to 69×, while reducing peak per-machine memory by up to 48×."
+        - "<strong>HDRFS:</strong> Contributed machine-learning and data-pipeline work for multimodal wildland-fire sensor data as part of the NSF EPSCoR Harnessing the Data Revolution for Fire Science project, and presented research at annual project meetings over the past three years."
     - title: Ph.D. Research Intern
       institution: Nokia Bell Labs, Stuttgart, Germany
       year: 08/2022 – 11/2022
@@ -58,13 +37,11 @@
         - Parallelized Number Theoretic Transform and Multi-Scalar Multiplication workloads across cluster resources to investigate proof-generation scalability and latency.
         - Characterized compute, memory, and parallelization bottlenecks in large-scale cryptographic workloads and presented findings to Bell Labs research teams.
 
-- title: Research Programs and Presentations
-  type: nested_list
+- title: Publications
+  type: list
   contents:
-    - title: "NSF EPSCoR — Harnessing the Data Revolution for Fire Science (HDRFS)"
-      items:
-        - Contributed machine-learning and data-pipeline work for multimodal wildland-fire sensor data.
-        - Presented research at annual project meetings over the past three years.
+    - "Patrick Watters, Xiaolong Ma, Syed Zawad, Jingyuan Zhang, Yue Cheng, Lei Yang, Feng Yan. “BatchFlow: Benefit-Aware Data Pipeline Allocation and Batch Reuse for Multi-Job Training.” SC26, 2026. Accepted, to appear."
+    - "Patrick Watters, Xiaolong Ma, Harry Yu, Ian Foster, Michael Papka, Lei Yang, Feng Yan, Rajkumar Kettimuthu. “OPSERVE: Opportunistic LLM Inference over Fragmented GPU Capacity in HPC Systems.” AIonHPC @ SC26, 2026. Accepted, to appear."
 
 - title: Industry Experience
   type: time_table
