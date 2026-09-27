@@ -7,9 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-## Selected projects
-
-A selection of current and recent research projects.
+## Research
 
 <div class="research-project">
   <div class="research-project-header">
