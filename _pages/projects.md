@@ -9,7 +9,7 @@ nav_order: 2
 
 ## Research
 
-Selected current and recent research projects.
+Selected research projects and ongoing work.
 
 <div class="research-project">
   <div class="research-project-header">
