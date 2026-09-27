@@ -107,6 +107,24 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+                    <li class="nav-item nav-socials" aria-label="Social links">
+            {% if site.github_username %}
+              <a class="nav-social-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            {% endif %}
+            {% if site.linkedin_username %}
+              <a class="nav-social-link" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            {% endif %}
+            {% if site.email %}
+              <a class="nav-social-link" href="mailto:{{ site.email }}" title="Email" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            {% endif %}
+          </li>
+
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
