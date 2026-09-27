@@ -6,7 +6,6 @@
       year: Expected Dec 2026
       description:
         - "Advisors: Feng Yan and Lei Yang"
-        - "GPA: 4.00"
     - title: M.S. in Computer Science and Engineering
       institution: University of Nevada, Reno
       year: Expected Dec 2026
@@ -15,8 +14,6 @@
     - title: B.Sc. (Hons) in Computing Science, First Class Honours
       institution: Ulster University, Belfast, Northern Ireland
       year: May 2017
-      description:
-        - "GPA: 4.00"
 
 - title: Research Experience
   type: time_table
@@ -46,6 +43,11 @@
 - title: Industry Experience
   type: time_table
   contents:
+    - title: AI Model Evaluator (Contract)
+      institution: Outlier
+      year: 2026 – Present
+      description:
+        - Evaluate conversational and voice AI systems through structured comparative assessment, focusing on response quality, interaction quality, task completion, and model behavior.
     - title: Senior Professional Services Consultant
       institution: Automated Intelligence, Belfast, Northern Ireland
       year: 07/2016 – 08/2021
