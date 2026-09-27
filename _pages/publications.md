@@ -7,11 +7,23 @@ nav: true
 nav_order: 3
 ---
 
-<div class="section-intro">
-  <p>My research spans AI systems, high-performance computing, distributed machine learning, and efficient LLM inference.</p>
+## Accepted / To appear
+
+<div class="publication-entry">
+  <h3>BatchFlow: Benefit-Aware Data Pipeline Allocation and Batch Reuse for Multi-Job Training</h3>
+  <p class="publication-authors"><strong>Patrick Watters</strong>, Xiaolong Ma, Syed Zawad, Jingyuan Zhang, Yue Cheng, Lei Yang, Feng Yan</p>
+  <p class="publication-venue">SC26, 2026 · <span class="publication-status">Accepted — to appear</span></p>
 </div>
 
-<div class="empty-state">
-  <h3>Publication list in progress</h3>
-  <p>I am consolidating publications, preprints, and related research artifacts here. This page intentionally contains no template or sample citations.</p>
+<div class="publication-entry">
+  <h3>OPSERVE: Opportunistic LLM Inference over Fragmented GPU Capacity in HPC Systems</h3>
+  <p class="publication-authors"><strong>Patrick Watters</strong>, Xiaolong Ma, Harry Yu, Ian Foster, Michael Papka, Lei Yang, Feng Yan, Rajkumar Kettimuthu</p>
+  <p class="publication-venue">SC26 Workshops, 2026 · <span class="publication-status">Accepted — to appear</span></p>
+</div>
+
+## Under review
+
+<div class="publication-entry">
+  <h3>zkInfer: A Distributed System for Scalable Zero-Knowledge Proofs of Machine Learning Inference</h3>
+  <p class="publication-venue"><span class="publication-status">Under review</span></p>
 </div>
