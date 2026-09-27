@@ -376,6 +376,40 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.nav-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--global-divider-color);
+}
+
+.nav-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--global-text-color);
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .nav-socials {
+    justify-content: flex-end;
+    margin: 0.5rem 0 0;
+    padding: 0.5rem 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--global-divider-color);
+  }
+}
+
 // Social (bottom)
 
 .social {
