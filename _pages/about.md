@@ -8,7 +8,7 @@ subtitle: Ph.D. Candidate · AI Systems · ML Infrastructure · Distributed Syst
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: headshot.jpg
   image_circular: false
 
 news: false
