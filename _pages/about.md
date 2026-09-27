@@ -42,9 +42,3 @@ I am especially interested in emerging systems challenges in **agentic AI, effic
   </div>
 </div>
 
-<div class="home-links">
-  <a href="/research/">Research</a>
-  <a href="/publications/">Publications</a>
-  <a href="/cv/">CV</a>
-  <a href="https://github.com/pw-02" target="_blank" rel="noopener noreferrer">GitHub</a>
-</div>
