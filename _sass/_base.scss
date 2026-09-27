@@ -1509,3 +1509,7 @@ body:has(.research-project) .post-header {
   font-weight: 600;
   color: var(--global-text-color);
 }
+
+body:has(.publication-entry) .post-header {
+  display: none;
+}
