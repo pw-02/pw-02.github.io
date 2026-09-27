@@ -7,7 +7,9 @@ nav: true
 nav_order: 2
 ---
 
-My work explores how AI systems can make better use of shared and constrained resources. Current projects span **LLM serving in HPC systems, data infrastructure for multi-job training, and distributed proof generation for verifiable machine learning**.
+## Selected projects
+
+A selection of current and recent research projects.
 
 <div class="research-project">
   <div class="research-project-header">
@@ -73,7 +75,6 @@ My work explores how AI systems can make better use of shared and constrained re
       <h3>zkInfer</h3>
       <p class="research-project-subtitle">A distributed system for scalable zero-knowledge proofs of machine learning inference</p>
     </div>
-    <a class="research-project-link" href="https://github.com/pw-02/zkinfer" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
   </div>
 
   <p>
@@ -94,11 +95,3 @@ My work explores how AI systems can make better use of shared and constrained re
     <span>zkML</span><span>ZK-SNARKs</span><span>distributed proving</span><span>resource-aware scheduling</span><span>Halo2 / EZKL</span>
   </div>
 </div>
-
-## Research direction
-
-Across these projects, I am interested in a common question: **how should AI systems adapt when compute, memory, data, or trust become the bottleneck?**
-
-That includes inference systems that adapt to changing resource availability, training infrastructure that coordinates shared data resources across jobs, and verifiable ML systems that restructure expensive proof generation for distributed execution.
-
-I am also interested in emerging systems problems around agentic AI, long-context and KV-cache management, heterogeneous compute, and the interaction between AI workloads and large-scale HPC infrastructure.
