@@ -1,16 +1,34 @@
-<ul class="card-text font-weight-light list-group list-group-flush">
-  {% for content in entry.contents %}
-    <li class="list-group-item">
-      <h5 class="font-italic">{{ content.title }}</h5>
-      {% if content.items %}
-        <ul class="subitems">
+{% if entry.title == 'Technical Skills' %}
+  <div class="cv-skills">
+    {% for content in entry.contents %}
+      <div class="cv-skill-row">
+        <div class="cv-skill-label">{{ content.title }}</div>
+        <div class="cv-skill-items">
           {% for subitem in content.items %}
-            <li>
-              <span class="subitem">{{ subitem }}</span>
-            </li>
+            {% assign skills = subitem | split: ' · ' %}
+            {% for skill in skills %}
+              <span>{{ skill }}</span>
+            {% endfor %}
           {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <ul class="card-text font-weight-light list-group list-group-flush">
+    {% for content in entry.contents %}
+      <li class="list-group-item">
+        <h5 class="font-italic">{{ content.title }}</h5>
+        {% if content.items %}
+          <ul class="subitems">
+            {% for subitem in content.items %}
+              <li>
+                <span class="subitem">{{ subitem }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
