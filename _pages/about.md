@@ -21,7 +21,7 @@ I am a **Ph.D. candidate at the University of Nevada, Reno** building systems fo
 
 My work spans **LLM inference and serving, distributed machine learning, and high-performance computing**, with a focus on resource-aware execution, memory and data movement, and making large-scale AI workloads run more efficiently.
 
-I am especially interested in emerging systems challenges around **agentic inference, KV-cache management, and verifiable machine learning**.
+I am especially interested in **agentic inference, KV-cache management, and zero-knowledge techniques for verifiable machine learning**.
 
 <div class="home-callout">
   <strong>What I work on</strong>
