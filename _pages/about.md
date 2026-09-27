@@ -4,7 +4,7 @@ title: about
 permalink: /
 nav: false
 nav_order: 1
-subtitle: Ph.D. Candidate · AI Systems · ML Infrastructure · Distributed Systems · HPC
+subtitle: Building efficient systems for LLMs, distributed ML, and high-performance computing
 
 profile:
   align: right
@@ -17,14 +17,39 @@ selected_papers: false
 social: true
 ---
 
-I am a **Ph.D. candidate at the University of Nevada, Reno** working at the intersection of artificial intelligence systems, high-performance computing, and distributed machine learning.
+I am a **Ph.D. candidate at the University of Nevada, Reno** working on systems that make modern AI workloads more efficient, scalable, and practical to run.
 
-My research focuses on building **efficient and scalable systems for modern AI workloads**, with particular interests in resource-efficient machine learning, distributed systems, GPU computing, and large language model inference and serving.
+My research sits at the intersection of **AI infrastructure, distributed systems, and high-performance computing**. I am particularly interested in how we can make better use of expensive compute resources—especially GPUs—while supporting increasingly demanding machine learning workloads.
 
-## Research interests
+<div class="home-callout">
+  <strong>What I work on</strong>
+  <p>Resource-aware LLM inference, efficient ML data pipelines, and distributed systems for large-scale and verifiable machine learning.</p>
+</div>
 
-- **LLM inference and serving** — adaptive, resource-aware inference for heterogeneous and opportunistic GPU environments.
-- **ML systems and infrastructure** — efficient data movement, scheduling, and systems support for large-scale learning workloads.
-- **Distributed systems and HPC** — scalable execution and coordination for compute-intensive and verifiable machine learning.
+## Current research
 
-My recent work explores adaptive LLM inference using opportunistic GPU resources in HPC environments, efficient data pipelines for multi-job deep learning training, and scalable distributed systems for verifiable machine learning.
+<div class="home-focus-grid">
+  <div class="home-focus-item">
+    <h3>Adaptive LLM inference</h3>
+    <p>Designing inference systems that can adapt to heterogeneous and opportunistically available GPU resources in HPC environments.</p>
+  </div>
+
+  <div class="home-focus-item">
+    <h3>Efficient ML infrastructure</h3>
+    <p>Improving data movement, scheduling, and resource utilization for concurrent deep learning workloads.</p>
+  </div>
+
+  <div class="home-focus-item">
+    <h3>Distributed ML systems</h3>
+    <p>Exploring scalable system designs for verifiable machine learning and compute-intensive distributed workloads.</p>
+  </div>
+</div>
+
+<div class="home-links">
+  <a href="/research/">Research</a>
+  <a href="/publications/">Publications</a>
+  <a href="/cv/">CV</a>
+  <a href="https://github.com/pw-02" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+
+I am building toward research and engineering roles in **AI systems, ML infrastructure, distributed systems, LLM serving, and HPC**, where systems design and performance engineering directly improve the efficiency of large-scale machine learning.
