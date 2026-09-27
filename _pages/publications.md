@@ -18,12 +18,5 @@ nav_order: 3
 <div class="publication-entry">
   <h3>OPSERVE: Opportunistic LLM Inference over Fragmented GPU Capacity in HPC Systems</h3>
   <p class="publication-authors"><strong>Patrick Watters</strong>, Xiaolong Ma, Harry Yu, Ian Foster, Michael Papka, Lei Yang, Feng Yan, Rajkumar Kettimuthu</p>
-  <p class="publication-venue">SC26 Workshops, 2026 · <span class="publication-status">Accepted — to appear</span></p>
-</div>
-
-## Under review
-
-<div class="publication-entry">
-  <h3>zkInfer: A Distributed System for Scalable Zero-Knowledge Proofs of Machine Learning Inference</h3>
-  <p class="publication-venue"><span class="publication-status">Under review</span></p>
+  <p class="publication-venue">AIonHPC @ SC26, 2026 · <span class="publication-status">Accepted — to appear</span></p>
 </div>
