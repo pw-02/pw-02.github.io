@@ -7,6 +7,8 @@ nav: true
 nav_order: 2
 ---
 
+My work explores how AI systems can make better use of shared and constrained resources. Current projects span **LLM serving in HPC systems, data infrastructure for multi-job training, and distributed proof generation for verifiable machine learning**.
+
 <div class="research-project">
   <div class="research-project-header">
     <div>
