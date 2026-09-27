@@ -17,11 +17,11 @@ selected_papers: false
 social: true
 ---
 
-I am a Ph.D. candidate at the University of Nevada, Reno working on systems for modern AI workloads in high-performance and distributed computing environments.
+I am a Ph.D. candidate at the University of Nevada, Reno working on **systems for modern AI workloads** in high-performance and distributed computing environments.
 
-My research focuses on the **infrastructure behind large-scale AI** — from LLM inference and serving to memory, data movement, scheduling, and resource management — with the goal of making increasingly demanding workloads more efficient and adaptable.
+My research focuses on the **infrastructure behind large-scale AI** — from training and inference to memory, data movement, scheduling, and resource management — with the goal of making increasingly demanding workloads more efficient and adaptable.
 
-I am especially interested in emerging systems challenges in **agentic AI, LLM serving and KV-cache management, and zero-knowledge machine learning (ZKML)**.
+I am especially interested in emerging systems challenges in **agentic AI, efficient LLM serving and KV-cache management, and verifiable machine learning using zero-knowledge (ZKML) techniques**.
 
 <div class="home-callout">
   <strong>What I work on</strong>
