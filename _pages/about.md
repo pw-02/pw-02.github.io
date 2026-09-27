@@ -4,7 +4,7 @@ title: about
 permalink: /
 nav: false
 nav_order: 1
-subtitle: Building efficient systems for LLMs, distributed ML, and high-performance computing
+subtitle: Building scalable, resource-efficient AI systems for high-performance computing
 
 profile:
   align: right
