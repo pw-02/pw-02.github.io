@@ -1474,10 +1474,6 @@ body {
 
 
 body:has(.research-project) .post-header {
-  margin-bottom: 1.25rem;
+  display: none;
 }
 
-body:has(.research-project) .post-header .post-title {
-  font-size: 2rem;
-  letter-spacing: -0.02em;
-}
