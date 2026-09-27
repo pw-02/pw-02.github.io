@@ -1,5 +1,13 @@
-<div class="cv-simple-list">
-  {% for content in entry.contents %}
-    <div class="cv-simple-item">{{ content }}</div>
-  {% endfor %}
-</div>
+{% if entry.title == 'Awards and Honours' %}
+  <div class="cv-awards">
+    {% for content in entry.contents %}
+      <div class="cv-award-item">{{ content }}</div>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="cv-simple-list">
+    {% for content in entry.contents %}
+      <div class="cv-simple-item">{{ content }}</div>
+    {% endfor %}
+  </div>
+{% endif %}
