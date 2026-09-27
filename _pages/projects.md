@@ -2,33 +2,112 @@
 layout: page
 title: research
 permalink: /research/
-description: Selected research directions in AI systems, ML infrastructure, distributed systems, and HPC.
+description: Research on scalable, resource-efficient AI systems for inference, training, and verifiable machine learning.
 nav: true
 nav_order: 2
 ---
 
-My work focuses on the systems challenges behind efficient, scalable machine learning. I am especially interested in the boundary between **AI infrastructure, distributed systems, and high-performance computing**.
+My research focuses on the **systems infrastructure behind large-scale AI**. I build resource-aware systems for inference, training, and verifiable machine learning, with an emphasis on scheduling, memory and data movement, reuse, and distributed execution.
 
-<div class="research-grid">
-  <div class="research-card">
-    <h3>Adaptive LLM inference</h3>
-    <p>Exploring how large language model inference can adapt to opportunistically available GPU resources in HPC environments, with an emphasis on utilization, flexibility, and serving efficiency.</p>
-    <div class="research-tags"><span>LLM serving</span><span>GPU systems</span><span>HPC</span></div>
+<div class="research-theme-strip">
+  <span>AI inference systems</span>
+  <span>ML data infrastructure</span>
+  <span>High-performance computing</span>
+  <span>Verifiable ML / zkML</span>
+</div>
+
+## Selected research systems
+
+<div class="research-project">
+  <div class="research-project-header">
+    <div>
+      <span class="research-kicker">LLM inference · HPC · resource management</span>
+      <h3>OPSERVE</h3>
+      <p class="research-project-subtitle">Opportunistic LLM inference over fragmented GPU capacity in HPC systems</p>
+    </div>
   </div>
 
-  <div class="research-card">
-    <h3>Deep learning data pipelines</h3>
-    <p>Designing efficient data pipelines for concurrent deep learning workloads, including the I/O and resource-contention challenges that emerge when multiple training jobs share infrastructure.</p>
-    <div class="research-tags"><span>ML systems</span><span>Data pipelines</span><span>Performance</span></div>
+  <p>
+    Batch-scheduled supercomputers can leave substantial GPU capacity temporarily unused when free resources do not match the requirements of queued jobs. OPSERVE explores how LLM inference can turn that fragmented capacity into useful serving capacity without assuming the resources will remain available.
+  </p>
+
+  <p>
+    The system combines a stable pool of persistent workers with opportunistically acquired transient workers. It adapts workers between colocated, prefill-only, and decode-only roles as both workload demand and resource availability change, while a shared KV-cache layer preserves completed prefill state when transient workers are reclaimed.
+  </p>
+
+  <div class="research-results">
+    <div><strong>9.81%</strong><span>of operational node-hours observed as unallocated in a year-long Polaris trace</span></div>
+    <div><strong>1.5–2.1×</strong><span>lower p95 end-to-end latency versus static prefill/decode allocation when both sustain load</span></div>
+    <div><strong>14.3×</strong><span>lower observed p95 latency under overload in the evaluated scenarios</span></div>
   </div>
 
-  <div class="research-card">
-    <h3>Verifiable ML systems</h3>
-    <p>Investigating scalable distributed-system designs for verifiable machine learning, with a focus on efficient coordination and execution at scale.</p>
-    <div class="research-tags"><span>Distributed systems</span><span>Verification</span><span>Scalability</span></div>
+  <div class="research-tags">
+    <span>LLM serving</span><span>KV cache</span><span>prefill/decode</span><span>malleable systems</span><span>HPC</span>
   </div>
 </div>
 
-## Broader interests
+<div class="research-project">
+  <div class="research-project-header">
+    <div>
+      <span class="research-kicker">Training systems · data pipelines · scheduling</span>
+      <h3>BatchFlow</h3>
+      <p class="research-project-subtitle">Benefit-aware data pipeline allocation and batch reuse for multi-job training</p>
+    </div>
+    <a class="research-project-link" href="https://github.com/pw-02/BatchFlow" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </div>
 
-AI infrastructure · ML systems · LLM serving · GPU computing · distributed computing · performance optimization · high-performance computing
+  <p>
+    Modern training jobs can stall not because accelerators are slow, but because data retrieval and preprocessing cannot supply mini-batches quickly enough. The problem becomes harder when multiple jobs compete for shared CPU, storage, memory, and network resources.
+  </p>
+
+  <p>
+    BatchFlow treats data preparation as a shared cluster service. It uses online profiling to direct a finite pool of data workers toward the jobs that benefit most, while coordinating prefetching and cache management so prepared mini-batches can be reused across concurrent jobs.
+  </p>
+
+  <div class="research-results">
+    <div><strong>3.8×</strong><span>higher aggregate training throughput in the evaluated multi-job workloads</span></div>
+    <div><strong>2.1×</strong><span>higher cost efficiency relative to the evaluated prior systems</span></div>
+    <div><strong>Shared</strong><span>worker allocation, prefetching, and reusable mini-batch caching across training jobs</span></div>
+  </div>
+
+  <div class="research-tags">
+    <span>training systems</span><span>data pipelines</span><span>batch reuse</span><span>resource allocation</span><span>PyTorch</span>
+  </div>
+</div>
+
+<div class="research-project">
+  <div class="research-project-header">
+    <div>
+      <span class="research-kicker">Verifiable ML · distributed systems · zero knowledge</span>
+      <h3>zkInfer</h3>
+      <p class="research-project-subtitle">A distributed system for scalable zero-knowledge proofs of machine learning inference</p>
+    </div>
+    <a class="research-project-link" href="https://github.com/pw-02/zkinfer" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </div>
+
+  <p>
+    Zero-knowledge machine learning can make outsourced inference verifiable without exposing sensitive model or intermediate state, but proof generation can be dramatically more expensive and memory-intensive than ordinary inference.
+  </p>
+
+  <p>
+    zkInfer approaches proof generation as a distributed systems problem. It decomposes a model inference into independently executable proving jobs, binds adjacent partitions with cryptographic commitments, and schedules those jobs across prover machines using runtime and memory estimates. Compiled circuits and proving keys are reused across requests to avoid repeating expensive setup work.
+  </p>
+
+  <div class="research-results">
+    <div><strong>69×</strong><span>lower end-to-end latency than monolithic proving in the evaluated distributed configuration</span></div>
+    <div><strong>48×</strong><span>lower peak per-machine memory in the reported experiments</span></div>
+    <div><strong>5.6×</strong><span>lower latency from decomposition alone on a single prover worker</span></div>
+  </div>
+
+  <div class="research-tags">
+    <span>zkML</span><span>ZK-SNARKs</span><span>distributed proving</span><span>resource-aware scheduling</span><span>Halo2 / EZKL</span>
+  </div>
+</div>
+
+## Research direction
+
+Across these projects, I am interested in a common question: **how should AI systems adapt when compute, memory, data, or trust become the bottleneck?**
+
+That includes inference systems that adapt to changing resource availability, training infrastructure that coordinates shared data resources across jobs, and verifiable ML systems that restructure expensive proof generation for distributed execution.
+
+I am also interested in emerging systems problems around agentic AI, long-context and KV-cache management, heterogeneous compute, and the interaction between AI workloads and large-scale HPC infrastructure.
