@@ -14,7 +14,7 @@ profile:
 news: false
 latest_posts: false
 selected_papers: false
-social: true
+social: false
 ---
 
 I am a Ph.D. candidate at the University of Nevada, Reno working on **systems for modern AI workloads** in high-performance and distributed computing environments.
