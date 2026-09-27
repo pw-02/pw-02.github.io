@@ -1,17 +1,11 @@
 ---
 layout: page
-title: Research Systems
+title: Research
 permalink: /research/
-description: Selected systems research across AI infrastructure, HPC, and verifiable machine learning.
+description:
 nav: true
 nav_order: 2
 ---
-
-I work on systems that make AI workloads more practical under real resource constraints — whether the bottleneck is **compute availability, data delivery, memory, or proof generation**.
-
-The projects below highlight selected systems work across inference, training infrastructure, high-performance computing, and verifiable machine learning.
-
-## Selected Systems
 
 <div class="research-project">
   <div class="research-project-header">
