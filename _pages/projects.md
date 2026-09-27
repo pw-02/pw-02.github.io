@@ -1,22 +1,17 @@
 ---
 layout: page
-title: research
+title: Research Systems
 permalink: /research/
-description: Research on scalable, resource-efficient AI systems for inference, training, and verifiable machine learning.
+description: Selected systems research across AI infrastructure, HPC, and verifiable machine learning.
 nav: true
 nav_order: 2
 ---
 
-My research focuses on the **systems infrastructure behind large-scale AI**. I build resource-aware systems for inference, training, and verifiable machine learning, with an emphasis on scheduling, memory and data movement, reuse, and distributed execution.
+I work on systems that make AI workloads more practical under real resource constraints — whether the bottleneck is **compute availability, data delivery, memory, or proof generation**.
 
-<div class="research-theme-strip">
-  <span>AI inference systems</span>
-  <span>ML data infrastructure</span>
-  <span>High-performance computing</span>
-  <span>Verifiable ML / zkML</span>
-</div>
+The projects below highlight selected systems work across inference, training infrastructure, high-performance computing, and verifiable machine learning.
 
-## Selected research systems
+## Selected Systems
 
 <div class="research-project">
   <div class="research-project-header">
@@ -78,7 +73,7 @@ My research focuses on the **systems infrastructure behind large-scale AI**. I b
 <div class="research-project">
   <div class="research-project-header">
     <div>
-      <span class="research-kicker">Verifiable ML · distributed systems · zero knowledge</span>
+      <span class="research-kicker">Ongoing work · Verifiable ML · distributed systems · zero knowledge</span>
       <h3>zkInfer</h3>
       <p class="research-project-subtitle">A distributed system for scalable zero-knowledge proofs of machine learning inference</p>
     </div>
