@@ -4,7 +4,7 @@ title: about
 permalink: /
 nav: false
 nav_order: 1
-subtitle: Building scalable, resource-efficient AI systems for high-performance computing
+subtitle: "Building scalable, resource-efficient <strong>AI systems</strong> for high-performance computing"
 
 profile:
   align: right
@@ -17,15 +17,15 @@ selected_papers: false
 social: true
 ---
 
-I am a **Ph.D. candidate at the University of Nevada, Reno** building systems for efficient and scalable AI.
+I am a **Ph.D. candidate at the University of Nevada, Reno** working on systems for modern AI workloads across high-performance and distributed computing.
 
-My work spans **LLM inference and serving, distributed machine learning, and high-performance computing**, with a focus on resource-aware execution, memory and data movement, and making large-scale AI workloads run more efficiently.
+My work spans **LLM inference and serving, ML systems and infrastructure, and high-performance computing**, with a focus on resource-aware execution, memory and data movement, and making large-scale AI workloads run more efficiently.
 
 I am especially interested in **agentic inference, KV-cache management, and zero-knowledge techniques for verifiable machine learning**.
 
 <div class="home-callout">
   <strong>What I work on</strong>
-  <p>Efficient inference, scalable distributed ML systems, and resource-aware execution for modern AI workloads.</p>
+  <p>Efficient inference, scalable AI infrastructure, and resource-aware execution for modern AI workloads.</p>
 </div>
 
 ## Current research
