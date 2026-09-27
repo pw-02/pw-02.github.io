@@ -5,9 +5,8 @@ title: publications
 description: Publications and scholarly work by Patrick Watters.
 nav: true
 nav_order: 3
+hide_title: true
 ---
-
-## Accepted / To appear
 
 <div class="publication-entry">
   <h3>BatchFlow: Benefit-Aware Data Pipeline Allocation and Batch Reuse for Multi-Job Training</h3>
