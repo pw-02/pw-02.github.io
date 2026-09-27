@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-Selected research projects and ongoing work.
+Selected research projects, ongoing work, and systems contributions.
 
 <div class="research-project">
   <div class="research-project-header">
