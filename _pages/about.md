@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-nav: true
+nav: false
 nav_order: 1
 subtitle: Ph.D. Candidate · AI Systems · ML Infrastructure · Distributed Systems · HPC
 
