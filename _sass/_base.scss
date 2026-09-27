@@ -1662,3 +1662,13 @@ body:has(.publication-entry) .post-header {
     gap: 0.3rem;
   }
 }
+
+.cv-awards {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.cv-award-item {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
