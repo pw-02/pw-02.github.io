@@ -73,33 +73,15 @@
 - title: Technical Skills
   type: nested_list
   contents:
-    - title: Programming
+    - title: Languages
       items:
-        - Python
-        - C++
-        - Rust
-        - C#
-        - Java
-    - title: AI / ML Systems
+        - Python · C++ · Rust · C#
+    - title: ML / Systems
       items:
-        - PyTorch
-        - TensorFlow
-        - DeepSpeed
-        - vLLM
-        - ONNX
-    - title: Distributed / HPC
+        - PyTorch · vLLM · TensorFlow · ONNX · gRPC · Apache Spark
+    - title: Infrastructure
       items:
-        - gRPC
-        - Apache Spark
-        - GPU systems
-        - HPC clusters
-    - title: Cloud / Infrastructure
-      items:
-        - AWS
-        - Microsoft Azure
-        - Docker
-        - Linux
-        - Git
+        - AWS · Microsoft Azure · Docker · Linux · HPC clusters
 
 - title: Awards and Honours
   type: list
