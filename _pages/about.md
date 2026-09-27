@@ -21,12 +21,7 @@ I am a Ph.D. candidate at the University of Nevada, Reno working on **systems fo
 
 My research focuses on the **infrastructure behind large-scale AI** — from training and inference to memory, data movement, scheduling, and resource management — with the goal of making increasingly demanding workloads more efficient and adaptable.
 
-I am especially interested in emerging systems challenges in **agentic AI, efficient LLM serving and KV-cache management, and verifiable machine learning using zero-knowledge (ZKML) techniques**.
-
-<div class="home-callout">
-  <strong>What I work on</strong>
-  <p>LLM serving · ML systems · HPC · verifiable ML / ZKML</p>
-</div>
+I am especially interested in emerging systems challenges in **agentic AI, efficient LLM serving, KV-cache management, and zero-knowledge machine learning**.
 
 ## Current research
 
