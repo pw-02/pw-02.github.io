@@ -65,3 +65,32 @@ Selected research projects, ongoing work, and systems contributions.
     <span>training systems</span><span>data pipelines</span><span>batch reuse</span><span>resource allocation</span><span>PyTorch</span>
   </div>
 </div>
+
+<div class="research-project">
+  <div class="research-project-header">
+    <div>
+      <span class="research-kicker">Verifiable ML · distributed systems · zero knowledge</span>
+      <h3>zkInfer</h3>
+      <p class="research-project-subtitle">A distributed system for scalable zero-knowledge proofs of machine learning inference</p>
+    </div>
+  </div>
+
+  <p>
+    Zero-knowledge machine learning can make outsourced inference verifiable without exposing sensitive model or intermediate state, but proof generation can be dramatically more expensive and memory-intensive than ordinary inference.
+  </p>
+
+  <p>
+    zkInfer approaches proof generation as a distributed systems problem. It decomposes a model inference into independently executable proving jobs, binds adjacent partitions with cryptographic commitments, and schedules those jobs across prover machines using runtime and memory estimates. Compiled circuits and proving keys are reused across requests to avoid repeating expensive setup work.
+  </p>
+
+  <div class="research-results">
+    <div><strong>69×</strong><span>lower end-to-end latency than monolithic proving in the evaluated distributed configuration</span></div>
+    <div><strong>48×</strong><span>lower peak per-machine memory in the reported experiments</span></div>
+    <div><strong>5.6×</strong><span>lower latency from decomposition alone on a single prover worker</span></div>
+  </div>
+
+  <div class="research-tags">
+    <span>zkML</span><span>ZK-SNARKs</span><span>distributed proving</span><span>resource-aware scheduling</span><span>Halo2 / EZKL</span>
+  </div>
+</div>
+
